@@ -1,1 +1,41 @@
-/* add your CSS here */
+.box{
+    width: 300px;
+    border-style: solid;
+    border-color: grey;
+    border-width: 2px;
+    padding: 1em;
+}
+
+.innerbox{
+    width: auto;
+    border-style: solid;
+    border-color: grey;
+    border-width: 2px;
+    padding: 1em;
+    margin: 5px;
+}
+
+.image{
+    width: 300px;
+}
+
+.label{
+    font: 12pt​ Consolas, Monaco, monospace;
+    font-weight: bold;
+}
+
+.fact{
+    font: 12pt​ Consolas, Monaco, monospace;
+    font-style: italic;
+    padding: 1em;
+}
+
+.list{
+    list-style: none;
+    display: inline;
+    padding: 1em;
+}
+
+.paragraph{
+    padding: 1em;
+}
