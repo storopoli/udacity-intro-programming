@@ -1,4 +1,4 @@
 __pycache__
 *.pyc
 *.code-workspace
-*.json
+.vscode/
