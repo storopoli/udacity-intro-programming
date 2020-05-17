@@ -26,17 +26,17 @@ function makeGrid(height, width) {
 function formSubmission() {
     // gets values for height and width from form and uses them to call makeGrid()
     event.preventDefault();
-    const height = document.getElementById('inputHeight').value;
-    const width = document.getElementById('inputWidth').value;
+    const height = document.getElementById('inputHeight').value; // save to a variable
+    const width = document.getElementById('inputWidth').value; // save to a variabl;e
     makeGrid(height, width);
 }
 
 function addClickEventToCells() {
     // add click events to all cells
     // on color selection return color
-    const colorPicker = document.getElementById("colorPicker");
-    const cells = document.getElementsByClassName('cell');
-    for (let i = 0; i < cells.length; i++) {
+    const colorPicker = document.getElementById("colorPicker"); // save to a variable
+    const cells = document.getElementsByClassName('cell'); // save to a variable
+    for (let i = 0; i < cells.length; i++) { // For Loop
         cells[i].addEventListener("click", function (event) {
             let clickedCell = event.target;
             clickedCell.style.backgroundColor = colorPicker.value;
@@ -44,8 +44,7 @@ function addClickEventToCells() {
     }
 }
 
-document.getElementById('sizePicker').onsubmit = function () {
-    // on submit of form #sizePicker:
+document.getElementById('sizePicker').onsubmit = function () { // id from .html file
     formSubmission();
 };
 
